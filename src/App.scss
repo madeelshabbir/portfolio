@@ -28,8 +28,10 @@ body {
 }
 
 .scale-x-1 {
-  overflow-x: hidden;
-  transform: scaleX(1.1);
+  &:hover{
+    overflow-x: hidden;
+    transform: scaleX(1.1);
+  }
 }
 
 .transform-delay-4 {
@@ -38,4 +40,8 @@ body {
 
 .padding-x-15-p {
   padding: 0 15%;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }

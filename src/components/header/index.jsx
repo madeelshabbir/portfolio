@@ -1,5 +1,11 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from './../../assets/images/kode.png';
+import i18n from '../../i18n.js';
+import { NAVS } from './../../shared/nav';
+
+const navLinks = () => {
+  return NAVS.map((nav, index) => <Nav.Link href={ nav.link } key={ index }>{i18n.t(nav.text)}</Nav.Link>)
+}
 
 const Header = props => {
   return (
@@ -12,11 +18,7 @@ const Header = props => {
         <Navbar.Toggle />
 
         <Navbar.Collapse>
-          <Nav>
-            <Nav.Link>Overview</Nav.Link>
-            <Nav.Link>Projects</Nav.Link>
-            <Nav.Link>Plans</Nav.Link>
-          </Nav>
+          <Nav>{ navLinks() }</Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

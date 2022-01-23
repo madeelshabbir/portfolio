@@ -1,7 +1,7 @@
 import UpperCarousel from './UpperCarousel';
 import LowerCarousel from './LowerCarousel';
 
-const Home = () => {
+const Overview = () => {
   return (
     <div>
       <UpperCarousel />
@@ -10,4 +10,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Overview;

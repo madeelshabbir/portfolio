@@ -1,27 +1,21 @@
-import Header from './Header/index';
-import Home from './Home/index';
-import { useState } from 'react';
-
+import Header from './header/index';
+import Overview from './overview/index';
+import { Route, Routes } from 'react-router-dom';
+import useScroll from '../hooks/useScroll';
 
 const Main = () => {
-  const [navbarColor, setNavbarColor] = useState('');
-
-  const changeNavbarColor = () => {
-    if(window.scrollY > 0) {
-      setNavbarColor('color-bg-primary');
-    }
-    else {
-      setNavbarColor('');
-    }
-  };
-
-  window.addEventListener('scroll', changeNavbarColor);
+  const navbarColor = useScroll('', 'color-bg-primary');
 
   return (
-    <div>
+    <>
       <Header navbarColor={ navbarColor } />
-      <Home />
-    </div>
+
+      <Routes>
+        <Route path='/' element={ <Overview /> } />
+        <Route path='/projects' element={<div />} />
+        <Route path='/plans' element={<div />} />
+      </Routes>
+    </>
   );
 }
 
