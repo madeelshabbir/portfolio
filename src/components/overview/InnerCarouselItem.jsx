@@ -7,9 +7,10 @@ const InnerCarouselItem = props => {
       <Row>
         { props.projects.map(project =>
             <LayeredCard key={ project.id }
-                        title={ project.title }
-                        imageFileName={ project.imageFileName }
-                        shortDescription={ project.shortDescription }
+                         title={ project.title }
+                         imageFileName={ project.imageFileName }
+                         shortDescription={ project.shortDescription }
+                         url= {project.url}
             />)
         }
       </Row>
