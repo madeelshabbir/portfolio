@@ -4,7 +4,7 @@ import i18n from '../../i18n.js';
 import { NAVS } from './../../shared/nav';
 
 const navLinks = () => {
-  return NAVS.map((nav, index) => <Nav.Link href={ nav.link } key={ index }>{i18n.t(nav.text)}</Nav.Link>)
+  return NAVS.map((nav, index) => <Nav.Link href={nav.link} key={index}>{i18n.t(nav.text)}</Nav.Link>)
 }
 
 const Header = props => {

@@ -4,12 +4,8 @@ const useScroll = (initialClassName, newClassName) => {
   const [className, setClassName] = useState(initialClassName);
 
   const changeClassName = () => {
-    if(window.scrollY > 0) {
-      setClassName(newClassName);
-    }
-    else {
-      setClassName(initialClassName);
-    }
+    if (window.scrollY > 0) setClassName(newClassName);
+    else setClassName(initialClassName);
   };
 
   window.addEventListener('scroll', changeClassName);
