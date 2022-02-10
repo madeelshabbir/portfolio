@@ -4,7 +4,7 @@ import './../../stylesheets/LowerCarousel.scss';
 
 const InnerCarouselItem = props => {
   return (
-      <Row>
+      <Row className='m-0'>
         { props.projects.map(project =>
             <LayeredCard key={ project.id }
                          title={ project.title }

@@ -16,7 +16,7 @@ const Overview = () => {
       <UpperCarousel />
       <LowerCarousel />
 
-      <Row>{ techCards() }</Row>
+      <Row className='m-0'>{ techCards() }</Row>
     </div>
   );
 }
