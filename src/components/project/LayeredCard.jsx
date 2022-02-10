@@ -3,7 +3,7 @@ import classes from './../../stylesheets/layered-card.module.scss';
 
 const LayeredCard = props => {
   return (
-    <Col md={6} xs={12} className={classes['layered-card']}>
+    <Col md={6} xs={12} className={`${classes['layered-card']} p-0`}>
       <a href={props.url}>
         <Image
           src={require(`./../../assets/images/projects/${props.imageFileName}`)}

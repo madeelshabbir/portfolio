@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from './../../assets/images/kode.png';
 import i18n from '../../i18n.js';
-import { NAVS } from './../../shared/nav';
+import { NAVS } from './../../shared/navs';
 
 const navLinks = () => {
   return NAVS.map((nav, index) => <Nav.Link href={nav.link} key={index}>{i18n.t(nav.text)}</Nav.Link>)
