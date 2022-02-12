@@ -10,7 +10,7 @@ const carouselItem = projects => {
     <Carousel.Item className='padding-x-15-p' key={i}>
       <InnerCarouselItem projects={projects} />
     </Carousel.Item>)
-}
+};
 
 const LowerCarousel = () => {
   const projects = useMemo(() => paginateProjects(PROJECTS), []);

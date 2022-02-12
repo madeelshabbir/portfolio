@@ -40,5 +40,12 @@ export const PROJECTS = [
     imageFileName: 'ninja.png',
     shortDescription: 'An app for free paid courses made in React',
     url: '/'
+  },
+  {
+    id: 6,
+    title: 'Bugzilla',
+    imageFileName: 'bugzilla.png',
+    shortDescription: 'An bug tracker app made in Rails 5',
+    url: '/'
   }
 ]
