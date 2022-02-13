@@ -4,7 +4,7 @@ $primary-color: #4cc9f0;
   border-radius: 10px;
 }
 
-html, body {
+.overflow-hidden-x {
   overflow-x: hidden;
 }
 
@@ -66,10 +66,18 @@ html, body {
   text-align: center;
 }
 
-.max-width {
+.max-body-width {
   max-width: 2640px;
 }
 
 .white-color {
   color: white;
+}
+
+.border-top-2 {
+  border-top: 2px solid black;
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid black;
 }

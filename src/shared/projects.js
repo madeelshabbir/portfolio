@@ -47,5 +47,12 @@ export const PROJECTS = [
     imageFileName: 'bugzilla.png',
     shortDescription: 'An bug tracker app made in Rails 5',
     url: '/'
+  },
+  {
+    id: 7,
+    title: 'Tech Gorilla',
+    imageFileName: 'tech-gorilla.png',
+    shortDescription: 'A site containing information about different technologies.',
+    url: '/'
   }
 ]

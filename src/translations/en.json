@@ -1,6 +1,14 @@
 {
-  "overview": "Overview",
-  "projects": "Projects",
-  "plans": "Plans",
-  "copyrights": "Copyrights ©2022 All rights reserved by Kodemate"
+  "header": {
+    "overview": "Overview",
+    "projects": "Projects",
+    "plans": "Plans"
+  },
+  "overview": {
+    "projects": "Our Projects",
+    "services": "Our Services"
+  },
+  "footer": {
+    "copyrights": "Copyrights ©2022 All rights reserved by Kodemate"
+  }
 }

@@ -1,6 +1,14 @@
 {
-  "overview": "Обзор",
-  "projects": "Проекты",
-  "plans": "Планы",
-  "copyrights": "Авторские права ©2022 Все права защищены Kodemate"
+  "header": {
+    "overview": "Обзор",
+    "projects": "Проекты",
+    "plans": "Планы"
+  },
+  "overview": {
+    "projects": "Наши проекты",
+    "services": "Наши услуги"
+  },
+  "footer": {
+    "copyrights": "Авторские права ©2022 Все права защищены Kodemate"
+  }
 }
