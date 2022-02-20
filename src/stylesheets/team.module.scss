@@ -1,0 +1,39 @@
+@mixin card-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.layered-card-radius {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 3px solid #adb5bd;
+}
+
+.layered-card-margin {
+  @include card-margin;
+}
+
+.info-card-radius {
+  @include card-margin;
+
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 767px){
+  .layered-card-radius {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0;
+  }
+
+  .info-card-radius {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .layered-card-margin {
+    margin-bottom: 0;
+  }
+}

@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classes from './../../stylesheets/circular-link.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CircularLink = props => {
   return (

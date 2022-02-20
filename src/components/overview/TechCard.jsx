@@ -1,5 +1,4 @@
 import { Col, Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import './../../stylesheets/LowerCarousel.scss';
 
 const techTooltip = title => {
   return <Tooltip>{title}</Tooltip>

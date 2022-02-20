@@ -1,8 +1,9 @@
+import About from './about';
+import Footer from './footer';
 import Header from './header/index';
 import Overview from './overview/index';
 import { Route, Routes } from 'react-router-dom';
 import useScroll from '../hooks/useScroll';
-import Footer from './footer';
 
 const Main = () => {
   const navbarColor = useScroll('', 'color-bg-primary');
@@ -14,7 +15,7 @@ const Main = () => {
       <div className='max-body-width m-auto'>
         <Routes>
           <Route path='/' element={ <Overview /> } />
-          <Route path='/members' element={<div />} />
+          <Route path='/about' element={<About />} />
         </Routes>
       </div>
 

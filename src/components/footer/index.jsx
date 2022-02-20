@@ -1,19 +1,13 @@
-import logo from './../../assets/images/kode.png';
-import CircularLink from './CircularLink';
-import { PROFILES } from './../../shared/profiles';
+import ContactLinks from '../shared/ContactLinks';
 import i18n from '../../i18n';
-
-const circularLinks = () => {
-  return PROFILES.map((profile, key) =>
-    <CircularLink key={key} icon={profile.icon} url={profile.url}/>
-  )
-};
+import logo from './../../assets/images/kode.png';
+import { PROFILES } from './../../shared/profiles';
 
 const Footer = () => {
   return (
     <div className='text-align-center padding-y-100 color-bg-primary'>
       <img src={ logo } alt='Kodemate' width='200' height='100' />
-      <div>{ circularLinks() }</div>
+      <ContactLinks profiles={PROFILES} />
 
       <p className='white-color mt-3'>
         { i18n.t('footer.copyrights') }

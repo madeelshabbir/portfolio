@@ -1,74 +1,74 @@
 export const TECHIMAGES = [
   {
     title: 'Ruby on Rails',
-    imageFileName: 'rails.png'
+    image: 'rails.png'
   },
   {
     title: 'Node.js',
-    imageFileName: 'node.png'
+    image: 'node.png'
   },
   {
     title: 'Shopify',
-    imageFileName: 'shopify.png'
+    image: 'shopify.png'
   },
   {
     title: 'Docker',
-    imageFileName: 'docker.png'
+    image: 'docker.png'
   },
   {
     title: 'Django',
-    imageFileName: 'django.png'
+    image: 'django.png'
   },
   {
     title: 'Flask',
-    imageFileName: 'flask.png'
+    image: 'flask.png'
   },
   {
     title: 'Express.js',
-    imageFileName: 'express.png'
+    image: 'express.png'
   },
   {
     title: 'Git',
-    imageFileName: 'git.png'
+    image: 'git.png'
   },
   {
     title: 'Mongodb',
-    imageFileName: 'mongodb.png'
+    image: 'mongodb.png'
   },
   {
     title: 'React.js',
-    imageFileName: 'react.png'
+    image: 'react.png'
   },
   {
     title: 'Jenkins',
-    imageFileName: 'jenkins.png'
+    image: 'jenkins.png'
   },
   {
     title: 'Postgres',
-    imageFileName: 'postgres.png'
+    image: 'postgres.png'
   },
   {
     title: 'Sass',
-    imageFileName: 'sass.png'
+    image: 'sass.png'
   },
   {
     title: 'Bootstrap',
-    imageFileName: 'bootstrap.png'
+    image: 'bootstrap.png'
   },
   {
     title: 'ASP.net',
-    imageFileName: 'asp.png'
+    image: 'asp.png'
   },
   {
     title: 'Redis',
-    imageFileName: 'redis.png'
+    image: 'redis.png'
   },
   {
     title: 'Python',
-    imageFileName: 'python.png'
+    image: 'python.png'
   },
   {
     title: 'Amazon Web Service',
-    imageFileName: 'aws.png'
+    image: 'aws.png'
   }
 ]
