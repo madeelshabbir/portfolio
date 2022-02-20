@@ -1,13 +1,19 @@
-import { Col, Image } from 'react-bootstrap';
+import { Col, Image, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './../../stylesheets/LowerCarousel.scss';
+
+const techTooltip = title => {
+  return <Tooltip>{title}</Tooltip>
+}
 
 const TechCard = props => {
   return (
-    <Col lg={2} xs={4} className={`scale-1 p-0 ${props.color}`}>
-      <Image
+    <Col md={2} xs={4} className={`scale-1 p-0 ${props.color}`}>
+      <OverlayTrigger placement='top' overlay={techTooltip(props.title)} >
+        <Image
         src={require(`./../../assets/images/techs/${props.src}`)}
         alt={props.title} width='100%' height='100%'
-      />
+        />
+      </OverlayTrigger>
     </Col>
   );
 }

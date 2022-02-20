@@ -4,11 +4,7 @@ export const NAVS = [
     text: 'overview'
   },
   {
-    link: '/projects',
-    text: 'projects'
-  },
-  {
-    link: '/plans',
-    text: 'plans'
+    link: '/about',
+    text: 'about'
   }
 ]

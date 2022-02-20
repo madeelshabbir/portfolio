@@ -9,14 +9,14 @@ const circularLinks = () => {
   )
 };
 
-const Footer = props => {
+const Footer = () => {
   return (
     <div className='text-align-center padding-y-100 color-bg-primary'>
       <img src={ logo } alt='Kodemate' width='200' height='100' />
       <div>{ circularLinks() }</div>
 
       <p className='white-color mt-3'>
-        { i18n.t('copyrights') }
+        { i18n.t('footer.copyrights') }
       </p>
     </div>
   );

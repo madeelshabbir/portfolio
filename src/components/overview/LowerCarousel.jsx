@@ -16,7 +16,7 @@ const LowerCarousel = () => {
   const projects = useMemo(() => paginateProjects(PROJECTS), []);
 
   return (
-    <Carousel indicators={ false }>
+    <Carousel className='border-top-2 border-bottom-2' indicators={ false }>
       { carouselItem(projects) }
     </Carousel>
   );

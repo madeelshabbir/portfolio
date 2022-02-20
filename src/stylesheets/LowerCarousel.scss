@@ -1,23 +1,44 @@
 .carousel {
   .carousel-control-prev, .carousel-control-next {
     background: #4cc9f0;
-    width: 50px;
-    height: 80px;
+    width: 75px;
+    height: 120px;
     opacity: 1;
     margin: auto 0;
 
     &:hover {
       transform: scale(1.1);
     }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 
   .carousel-control-prev {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
   }
 
   .carousel-control-next {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+  }
+
+  @media screen and (max-width:767px){
+    .carousel-control-prev, .carousel-control-next {
+      width: 50px;
+      height: 80px;
+    }
+
+    .carousel-control-prev {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    .carousel-control-next {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
   }
 }
