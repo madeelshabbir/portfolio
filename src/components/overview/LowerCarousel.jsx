@@ -1,9 +1,9 @@
 import { Carousel } from 'react-bootstrap';
-import { useMemo } from 'react';
-import './../../stylesheets/LowerCarousel.scss';
-import { PROJECTS } from '../../shared/projects';
 import InnerCarouselItem from './InnerCarouselItem';
 import { paginateProjects } from '../../helpers/project-helper';
+import { PROJECTS } from '../../shared/projects';
+import { useMemo } from 'react';
+import './../../stylesheets/LowerCarousel.scss';
 
 const carouselItem = projects => {
   return projects.map((projects, i) =>

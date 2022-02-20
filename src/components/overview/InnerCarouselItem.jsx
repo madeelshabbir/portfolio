@@ -1,16 +1,15 @@
+import LayeredCard from '../shared/LayeredCard';
 import { Row } from 'react-bootstrap';
-import LayeredCard from './../project/LayeredCard';
-import './../../stylesheets/LowerCarousel.scss';
 
 const InnerCarouselItem = props => {
   return (
     <Row className='m-0'>
       { props.projects.map(project =>
           <LayeredCard key={ project.id }
-                        title={ project.title }
-                        imageFileName={ project.imageFileName }
-                        shortDescription={ project.shortDescription }
-                        url= {project.url}
+                       heading={ project.title }
+                       image={ project.image }
+                       description={ project.description }
+                       url= {project.url} threshold={6}
           />)
       }
     </Row>

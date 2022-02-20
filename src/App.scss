@@ -1,4 +1,4 @@
-$primary-color: #4cc9f0;
+$primary-color: #adb5bd;
 
 @mixin border-radius-10 {
   border-radius: 10px;
@@ -30,6 +30,10 @@ $primary-color: #4cc9f0;
 
 .color-bg-primary {
   background-color: $primary-color;
+}
+
+.base-color {
+  color: #343a40;
 }
 
 .opacity-8 {
@@ -81,3 +85,5 @@ $primary-color: #4cc9f0;
 .border-bottom-2 {
   border-bottom: 2px solid black;
 }
+
+
