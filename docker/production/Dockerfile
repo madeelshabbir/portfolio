@@ -2,6 +2,7 @@ FROM node:16.14-alpine as builder
 WORKDIR /var/www/portfolio
 
 COPY package.json package-lock.json ./
+RUN npm set maxsockets 3
 RUN npm i
 COPY . .
 

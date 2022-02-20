@@ -6,8 +6,3 @@ services:
       dockerfile: docker/production/Dockerfile
     ports:
       - "8080:80"
-    volumes:
-      - /var/www/portfolio/node_modules
-      - .:/var/www/portfolio
-    environment:
-      - CHOKIDAR_USEPOLLING=true
