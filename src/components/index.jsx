@@ -14,8 +14,7 @@ const Main = () => {
       <div className='max-body-width m-auto'>
         <Routes>
           <Route path='/' element={ <Overview /> } />
-          <Route path='/projects' element={<div />} />
-          <Route path='/plans' element={<div />} />
+          <Route path='/members' element={<div />} />
         </Routes>
       </div>
 

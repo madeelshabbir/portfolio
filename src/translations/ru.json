@@ -1,8 +1,7 @@
 {
   "header": {
     "overview": "Обзор",
-    "projects": "Проекты",
-    "plans": "Планы"
+    "about": "О нас"
   },
   "overview": {
     "projects": "Наши проекты",
